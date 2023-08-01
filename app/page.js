@@ -14,7 +14,7 @@ export default function Home()  {
     <div>
       <Landing/>
       <Feature/>
-      <List/>
+      {/* <List/> */}
       <According/>
       <Contact/>
       <Footer/>

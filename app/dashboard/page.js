@@ -4,6 +4,7 @@ import Admin from '@/components/admin';
 import UserList from '@/components/admin';
 import Link from 'next/link';
 import OrderList from "../../components/Global/OrderList.jsx"
+import HistoryComponent from '@/components/Profile/HistoryComponent';
 
 const AdminDashboard = async () => {
   // Example usage in another file
@@ -31,7 +32,7 @@ const AdminDashboard = async () => {
           <p>Email: {user.email}</p>
           <p>Cash: {user.cash}</p>
         
-      </Link><ProfileUpdate cash={user.cash} id={user.id} phone={user.phone}/><OrderList title={user.email}/> 
+      </Link><ProfileUpdate cash={user.cash} id={user.id} phone={user.phone}/><HistoryComponent email={user.email}/>
       </>
       })}
       

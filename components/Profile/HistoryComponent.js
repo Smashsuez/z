@@ -59,7 +59,7 @@ const HistoryComponent = ({ email }) => {
 
   const { title, desc } = topic?.order;
 
-  return( <div style={{marginTop: "200px"}}>
+  return( <div >
           {topic?.order.map((t) => (
         <div >
           <div>
