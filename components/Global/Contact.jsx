@@ -9,7 +9,7 @@ const Contact = () => {
     const [phone, setPhone] = useState("");
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='contact'>
       <h2 className={styles.title}>Feel Free To Contact Us</h2>
     <div className={styles.content}>
     <div className={styles.wrapper}>

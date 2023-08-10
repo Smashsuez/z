@@ -34,7 +34,7 @@ const NavLink = () => {
             </div>
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
-                <Link legacyBehavior href={"/about"}>
+                <Link legacyBehavior href={"#menu"}>
                   <a>About</a>
                 </Link>
               </div>
@@ -42,7 +42,7 @@ const NavLink = () => {
             
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
-                <Link legacyBehavior href={"/profile/server"}>
+                <Link legacyBehavior href={"#menu"}>
                   <a>Services</a>
                 </Link>
               </div>
@@ -58,7 +58,7 @@ const NavLink = () => {
 
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
-                <Link legacyBehavior href={"/Contact"}>
+                <Link legacyBehavior href={"#contact"}>
                   <a>Contact</a>
                 </Link>
               </div>

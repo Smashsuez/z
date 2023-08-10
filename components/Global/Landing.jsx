@@ -41,7 +41,7 @@ const Landing = () => {
                 </div>
                 <div className={styles.images}>
                     <div className={styles.imageWrapper}>
-                    <img src="/imgs/mobile.jpg" alt="slide" className={styles.image} />
+                    <img src="/imgs/Landing.jpg" alt="slide" className={styles.image} />
                     </div>
                 </div>
             </div>
