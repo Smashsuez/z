@@ -57,7 +57,7 @@ export async function signUpWithCredentials (data){
             url: `${BASE_URL}/verify?token=${token}`,
             text: 'VERFIY EMAIL'
         })
-        return{msg: "SignUp Successfully"}
+        return{msg: "Please Cheack Your Email"}
     } catch(error){
         redirect(`/errors?error=${error.message}`)
     }
