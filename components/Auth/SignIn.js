@@ -5,7 +5,7 @@ import Link from 'next/link';
 import UpdataForm from '../Profile/UpdataForm';
 import Button from '../Profile/Button';
 import styles from "../../app/style/SignIn.module.css"
-const SignUp = ({ callbackUrl }) => {
+const SignIn = ({ callbackUrl }) => {
   async function handleCredentialsLogin(formData){
     const email = formData.get('email')
     const password = formData.get('password')
@@ -16,7 +16,7 @@ const SignUp = ({ callbackUrl }) => {
   return (
     <div className={styles.container}> {/* Apply the CSS module class */}
       <div className={styles.form}> {/* Apply the CSS module class */}
-        <h2>Sign Up</h2>
+        <h2>Sign In</h2>
         <UpdataForm action={handleCredentialsLogin}>
           <input type="email" name="email" placeholder="Email" required />
           <input type="password" name="password" placeholder="Password" required />
@@ -31,4 +31,4 @@ const SignUp = ({ callbackUrl }) => {
   );
 };
 
-export default SignUp;
+export default SignIn;
