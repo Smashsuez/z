@@ -21,7 +21,7 @@ const Icon = () => {
     </span>
     <span className={styles.item}>
     <FontAwesomeIcon icon={faPeopleCarryBox} className={styles.icon}/>
-    <div className={styles.text}>Door TO Door</div>
+    <div className={styles.text}>Door To Door</div>
     </span>
     <span className={styles.item}>
     <FontAwesomeIcon icon={faBoxArchive} className={styles.icon}/>

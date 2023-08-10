@@ -24,7 +24,6 @@ const List = () => {
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"
      >
-        <Link href="/" passHref>
     <div className={styles.cardContainer} onClick={() => setOpen(true)} >
         {/* <Image className={styles.image} src={list.img} width="50" height="50" alt=""/> */}
         <FontAwesomeIcon icon={faTruck} className={styles.image}  />
@@ -34,12 +33,11 @@ const List = () => {
         Now you can ship your goods from anywhere to anywhere
         </p>
     </div> 
-    </Link>
     
     <div className={styles.cardContainerTwo} >
         {/* <Image className={styles.image} src={list.img} width="50" height="50" alt=""/> */}
         <FontAwesomeIcon icon={faMotorcycle} className={styles.image}/>
-        <h1 className={styles.cardtitle} style={{ textDecoration: 'none' }}>Otlop</h1>
+        <h1 className={styles.cardtitle} style={{ textDecoration: 'none' }}>GO Zagel</h1>
         <hr className={styles.line}/>
         <p className={styles.desc} style={{ textDecoration: 'none' }}>
         Now you can order your needs from anywhere anytime.

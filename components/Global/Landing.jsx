@@ -21,7 +21,7 @@ const Landing = () => {
                         <h1 className={styles.titleH1}>
                             <Typewriter
                                 options={{
-                                    strings: ['Welcome To ZAGEL.', 'Welcome To ZAGEL.'],
+                                    strings: ['Welcome To ZAGEL.', 'Everything you need to ship better.'],
                                     autoStart: true,
                                     loop: true
                                 }}
@@ -31,14 +31,17 @@ const Landing = () => {
                     </div>
                     <div>
                         <p className={styles.description}>
-            Customer satisfaction is at the core of our business, and we ensure the highest level of service and quality.
+                        With one shipping contract, you'll be able to start, manage and grow your business and ship local and international shipments from a single dashboard.
                         </p>
                     </div>
-                    <Icon />
+                    <div className={styles.link}>
+                        <a href='#' className={styles.explore}>Explore</a>
+                        <a href='#' className={styles.contact}>Contact Us</a>
+                    </div>
                 </div>
                 <div className={styles.images}>
                     <div className={styles.imageWrapper}>
-                    <img src="/imgs/mobile3.jpg" alt="slide" className={styles.image} />
+                    <img src="/imgs/mobile.jpg" alt="slide" className={styles.image} />
                     </div>
                 </div>
             </div>

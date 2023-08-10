@@ -1,0 +1,116 @@
+/* Contact.module.css */
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 ;
+}
+.ContentContainer{
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+}
+.title{
+    display: inline-block;
+    margin-bottom: 0;
+    color: #006dda;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    font-family: "poppins", sans-serif;  
+}
+.title::before{
+    position: absolute;
+    top: 50%;
+    right: -60%;
+    content: "";
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50%;
+    height: 1px;
+    background: #1f285c;
+}
+.title::after{
+    position: absolute;
+    top: 50%;
+    left : -60%;
+    content: "";
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50%;
+    height: 1px;
+    background: #1f285c;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    width: 45%;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #006dda;
+    border-radius: 7px;
+  }
+  
+  .textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  .button {
+    padding: 10px;
+    background-color: #006dda;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Add responsive styles */
+  
+  @media screen and (max-width: 600px) {
+    .form {
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 480px){
+    .title{
+        font-size: 1rem;
+    }
+    
+    
+}
+@media screen and (max-width: 360px) {
+    .title::after,
+    .title::before{
+        width: 50%;
+    max-width: 10vw;
+    }
+    .title::before{
+        right: -40%;
+    }
+    .title::after{
+        left: -40%;
+    }
+    
+}
+
+  

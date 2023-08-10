@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "../../app/style/Footer.module.css"
+import Icon from './Icon'
 
 
 const Footer = () => {
@@ -20,6 +21,10 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <div className={styles.bottom}>
+        <Icon/>
+      </div>
+      
     </div>
     </div>
   )

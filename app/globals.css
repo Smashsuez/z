@@ -374,7 +374,7 @@ input.check-toggle-round-flat:checked + label:after {
 
 
 
-
+/* 
 
 .slider {
   width: 100%;
@@ -416,7 +416,6 @@ input.check-toggle-round-flat:checked + label:after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background: url(/imgs/green.jpg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -466,7 +465,7 @@ input.check-toggle-round-flat:checked + label:after {
 .current .content {
   opacity: 1;
   transition: all 0.5s ease;
-}
+} */
 
 /* .arrow {
   border: 2px solid white;
@@ -493,7 +492,7 @@ input.check-toggle-round-flat:checked + label:after {
   left: 1.5rem;
 } */
 
-hr {
+/* hr {
   height: 2px;
   background: white;
   width: 50%;
@@ -528,7 +527,7 @@ h1{
   40%, 60%{
       transform: translateY(-15px);
   }
-}
+} */
 
 
 

@@ -25,14 +25,14 @@
     /* color:#1f285c; */
     color:#fff;
     margin: 0 7px;
-    cursor:pointer;
-    width: 20px;
+    cursor:pointer; 
 }
 .icon > *{
     color: #fff;
 }
 .text{
     color: #fff;
+    padding: 0 10px
 }
 @media screen and (max-width: 670px) {
     .icons{

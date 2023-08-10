@@ -76,25 +76,11 @@ font-family: 'Montserrat', sans-serif;
 .bottom{
     display:flex;
     flex-wrap:wrap;
-    justify-content:space-between;
+    justify-content:center;
     margin-top:100px;
     font-weight: light;
 }
 
-.bottomsecond{
-    width:100%;
-    text-align:center;
-}
-
-.second{
-    text-align:left;
-    line-height: 1.5;
-}
-
-.bottomthird{
-    width:100%;
-    text-align:right;
-}
 
 @media screen and (max-width: 880px) {
     .container{
