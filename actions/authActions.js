@@ -6,7 +6,6 @@ import { redirect } from "next/navigation";
 import bcrypt from "bcrypt" 
 import { generateToken, verifyToken } from "@/utils/token";
 import sendEmail from "@/utils/sendEmail";
-import { useRouter } from 'next/router';
 
 const BASE_URL = process.env.NEXTAUTH_URL;
 
@@ -66,7 +65,6 @@ export async function signUpWithCredentials (data){
 }
 
 export async function verfiyWithCredentials (token){
-    const router = useRouter();
 
     try{
         const { user } = verifyToken(token)
@@ -76,7 +74,7 @@ export async function verfiyWithCredentials (token){
         const newUser = new User(user)
         await newUser.save();
         console.log({newUser})
-        router.push('https://www.myzagel.com/signin');
+        redirect('/signin')
     } catch(error){ 
         redirect(`/errors?error=${error.message}`)
     }
