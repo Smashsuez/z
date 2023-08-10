@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import { signUpWithCredentials } from '@/actions/authActions';
 import Button from '../Profile/Button';
