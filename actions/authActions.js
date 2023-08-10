@@ -68,10 +68,12 @@ export async function verfiyWithCredentials (token){
 
     try{
         const { user } = verifyToken(token)
+        console.log({user})
         const userExist = await User.findOne({email: user.email})
         if (userExist) return{msg: "verify Success"}
         const newUser = new User(user)
         await newUser.save();
+        console.log({newUser})
         redirect('https://www.myzagel.com/signin')
     } catch(error){ 
         redirect(`/errors?error=${error.message}`)
