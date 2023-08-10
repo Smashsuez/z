@@ -7,7 +7,7 @@ import "../../app/style/SignUp.css" // Import the CSS file
 
 const SignUp = () => {
   const [state, setState] = useState('a');
-  const [message, setMessage] = useState('aaaaa');
+  const [message, setMessage] = useState('');
 
   async function handlesignUpCredentials(formData) {
     const name = formData.get("name");
