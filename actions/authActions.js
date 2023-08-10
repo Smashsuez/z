@@ -73,8 +73,7 @@ export async function verfiyWithCredentials (token){
         if (userExist) return{msg: "verify Success"}
         const newUser = new User(user)
         await newUser.save();
-        console.log({newUser})
-        redirect('https://www.myzagel.com/signin')
+        redirect('/signin')
     } catch(error){ 
         redirect(`/errors?error=${error.message}`)
     }
