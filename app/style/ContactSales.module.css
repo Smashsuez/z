@@ -87,8 +87,9 @@
   /* Add responsive styles */
   
   @media screen and (max-width: 600px) {
+    .ContentContainer,
     .form {
-      max-width: 100%;
+      width: 100%;
     }
   }
   @media screen and (max-width: 480px){
