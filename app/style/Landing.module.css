@@ -372,7 +372,7 @@
         font-size: 14px;
     }
     .container{
-        min-height: 80vh;
+        min-height: 90vh;
     }
 }
 @media screen and (max-width: 380px) {
