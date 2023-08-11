@@ -46,8 +46,8 @@ const SignUp = () => {
         <input type="product" name="product" placeholder="What Is/Are Product You Deliverd" required />
         <input type="orderNumber" name="orderNumber" placeholder="Order Number" required />
         <select name="state" value={state} onChange={handleStateChange}>
-          <option value="a">Personal</option>
-          <option value="b">Business</option>
+          <option value="Personal">Personal</option>
+          <option value="Business">Business</option>
         </select>
         {message && <p>{message}</p>}
         <Button value="Submit" />
