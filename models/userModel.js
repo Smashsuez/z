@@ -32,7 +32,23 @@ const userSchema = new Schema({
     provider: {
         type: String,
         default: 'credentials'
-    }
+    },
+    businessName: {
+        type: String,
+        required : true,
+    },
+    page: {
+        type: String,
+        required : true,
+    },
+    product: {
+        type: String,
+        required : true,
+    },
+    orderNumber: {
+        type: String,
+        required : true,
+    },
 }, {timestamps: true})
 
 const User = models.user || model('user', userSchema)
