@@ -371,6 +371,9 @@
     .link a{
         font-size: 14px;
     }
+    .container{
+        min-height: 80vh;
+    }
 }
 @media screen and (max-width: 380px) {
     .link .contact{
