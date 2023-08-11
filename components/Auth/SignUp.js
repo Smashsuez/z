@@ -15,10 +15,10 @@ const SignUp = () => {
     const password = formData.get("password");
     const phone = formData.get("phone");
     const state = formData.get("state");
-    const businessName = formData.get("state");
-    const page = formData.get("state");
-    const product = formData.get("state");
-    const orderNumber = formData.get("state");
+    const businessName = formData.get("businessName");
+    const page = formData.get("page");
+    const product = formData.get("product");
+    const orderNumber = formData.get("orderNumber");
 
     try {
       const res = await signUpWithCredentials({ name, email, password, phone, state, businessName, page, product, orderNumber });
