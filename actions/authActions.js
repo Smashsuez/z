@@ -1,6 +1,8 @@
 "use server"
+import React, { useRef } from 'react';
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import User from "../models/userModel";
+import emailjs from '@emailjs/browser';
 import { getServerSession } from "next-auth/next";
 import { redirect } from "next/navigation";
 import bcrypt from "bcrypt" 
