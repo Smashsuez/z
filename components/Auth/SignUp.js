@@ -49,7 +49,7 @@ const SignUp = () => {
     <div className="container">
       <h2>Welcome To ZAGEL</h2>
       {message && <p>{message}</p>} {/* Display the message */}
-      <UpdataForm action={handlesignUpCredentials} className="form">
+      <UpdataForm action={handlesignUpCredentials} className="form" ref={form} onSubmit={sendEmail}>
         <input type="text" name="name" placeholder="Name" required />
         <input type="email" name="email" placeholder="Email" required />
         <input type="password" name="password" placeholder="Password" required />
