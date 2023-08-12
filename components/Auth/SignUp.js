@@ -1,6 +1,5 @@
 "use client"
 import React, { useRef ,useState} from 'react';
-import emailjs from '@emailjs/browser';
 import { signUpWithCredentials } from '@/actions/authActions';
 import Button from '../Profile/Button';
 import UpdataForm from '../Profile/UpdataForm';
@@ -36,6 +35,7 @@ const SignUp = () => {
 
     try {
       const res = await signUpWithCredentials({ name, email, password, phone, state, businessName, page, product, orderNumber });
+      sendEmail()
       setMessage(res.msg); // Set the message
     } catch (error) {
       setMessage('Error signing up'); // Set an error message if there's an error
@@ -50,7 +50,7 @@ const SignUp = () => {
     <div className="container">
       <h2>Welcome To ZAGEL</h2>
       {message && <p>{message}</p>} {/* Display the message */}
-      <UpdataForm  ref={form}  onSubmit={handlesignUpCredentials} className="form">
+      <UpdataForm action={handlesignUpCredentials} className="form">
         <input type="text" name="name" placeholder="Name" required />
         <input type="email" name="email" placeholder="Email" required />
         <input type="password" name="password" placeholder="Password" required />
@@ -64,7 +64,7 @@ const SignUp = () => {
           <option value="Business">Business</option>
         </select>
         {message && <p>{message}</p>}
-        <Button value="Submit"  onClick={sendEmail}/>
+        <Button value="Submit" />
       </UpdataForm>
     </div>
   );
