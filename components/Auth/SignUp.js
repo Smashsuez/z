@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useRef ,useState} from 'react';
 import { signUpWithCredentials } from '@/actions/authActions';
 import Button from '../Profile/Button';
 import UpdataForm from '../Profile/UpdataForm';
@@ -8,6 +8,19 @@ import "../../app/style/SignUp.css" // Import the CSS file
 const SignUp = () => {
   const [state, setState] = useState('a');
   const [message, setMessage] = useState('');
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ph1l7w6', 'template_y4wgai7', form.current, 'MCXYN1narHDCj_5dp')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
 
   async function handlesignUpCredentials(formData) {
     const name = formData.get("name");
