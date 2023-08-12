@@ -56,7 +56,7 @@ export async function signUpWithCredentials (data){
         await sendEmail({
             to: "mohamedahmedgameel@gmail.com",
             url: `${BASE_URL}/verify?token=${token}`,
-            text: 'Test'
+            text: '{{user.email}}'
         })
         await sendEmail({
             to: data.email,
