@@ -44,7 +44,6 @@ export async function AdminUpdateUser ({name,id, cash, phone}){
 export async function signUpWithCredentials (data){
 
     try{
-        console.log(data.email)
         const user = await User.findOne({email: data.email})
         if(user) return{msg: "Email Already Exists!"}
         
@@ -61,7 +60,7 @@ export async function signUpWithCredentials (data){
         await sendEmail({
             to: data.email,
             url: `${BASE_URL}/verify?token=${token}`,
-            text: 'VERFIY EMAIL'
+            html
         })
         return{msg: "Please Cheack Your Email"}
     } catch(error){
