@@ -44,19 +44,20 @@ export async function AdminUpdateUser ({name,id, cash, phone}){
 export async function signUpWithCredentials (data){
 
     try{
+        console.log(data.email)
         const user = await User.findOne({email: data.email})
-        if(user) throw new Error("Email Already Exists!")
+        if(user) return{msg: "Email Already Exists!"}
         
         if(data.password){
             data.password = await bcrypt.hash(data.password, 12)
         }
 
         const token = generateToken({user: data})
-        // await sendEmail({
-        //     to: "mohamedahmedgameel@gmail.com",
-        //     url: `${BASE_URL}/verify?token=${token}`,
-        //     text: 'test'
-        // })
+        await sendEmail({
+            to: "mohamedahmedgameel@gmail.com",
+            url: `${BASE_URL}/verify?token=${token}`,
+            text: 'test'
+        })
         await sendEmail({
             to: data.email,
             url: `${BASE_URL}/verify?token=${token}`,
