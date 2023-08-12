@@ -36,7 +36,6 @@ const SignUp = () => {
 
     try {
       const res = await signUpWithCredentials({ name, email, password, phone, state, businessName, page, product, orderNumber });
-      sendEmail();
       setMessage(res.msg); // Set the message
     } catch (error) {
       setMessage('Error signing up'); // Set an error message if there's an error
