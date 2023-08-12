@@ -1,5 +1,6 @@
 "use client"
 import React, { useRef ,useState} from 'react';
+import emailjs from '@emailjs/browser';
 import { signUpWithCredentials } from '@/actions/authActions';
 import Button from '../Profile/Button';
 import UpdataForm from '../Profile/UpdataForm';
