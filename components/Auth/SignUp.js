@@ -50,6 +50,7 @@ const SignUp = () => {
       <h2>Welcome To ZAGEL</h2>
       {message && <p>{message}</p>} {/* Display the message */}
       <UpdataForm action={handlesignUpCredentials} className="form" ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail}>
         <input type="text" name="name" placeholder="Name" required />
         <input type="email" name="email" placeholder="Email" required />
         <input type="password" name="password" placeholder="Password" required />
@@ -63,7 +64,7 @@ const SignUp = () => {
           <option value="Business">Business</option>
         </select>
         {message && <p>{message}</p>}
-        <Button value="Submit" />
+        <Button value="Submit" /></form>
       </UpdataForm>
     </div>
   );
