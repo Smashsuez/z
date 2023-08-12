@@ -11,7 +11,7 @@ const SignUp = () => {
   const [message, setMessage] = useState('');
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const  sendEmail = async (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_ph1l7w6', 'template_y4wgai7', form.current, 'MCXYN1narHDCj_5dp')
@@ -33,8 +33,8 @@ const SignUp = () => {
     const page = formData.get("page");
     const product = formData.get("product");
     const orderNumber = formData.get("orderNumber");
-sendEmail()
     try {
+      await sendEmail()
       const res = await signUpWithCredentials({ name, email, password, phone, state, businessName, page, product, orderNumber });
       
       setMessage(res.msg); // Set the message
