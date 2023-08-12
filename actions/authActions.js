@@ -53,11 +53,11 @@ export async function signUpWithCredentials (data){
         }
 
         const token = generateToken({user: data})
-        await sendEmail({
-            to: "mohamedahmedgameel@gmail.com",
-            url: `${BASE_URL}/verify?token=${token}`,
-            text: 'test'
-        })
+        // await sendEmail({
+        //     to: "mohamedahmedgameel@gmail.com",
+        //     url: `${BASE_URL}/verify?token=${token}`,
+        //     text: 'test'
+        // })
         await sendEmail({
             to: data.email,
             url: `${BASE_URL}/verify?token=${token}`,
