@@ -1,6 +1,6 @@
 "use client"
 import React, { useRef ,useState} from 'react';
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 import { signUpWithCredentials } from '@/actions/authActions';
 import Button from '../Profile/Button';
 import UpdataForm from '../Profile/UpdataForm';
@@ -11,16 +11,16 @@ const SignUp = () => {
   const [message, setMessage] = useState('');
   const form = useRef();
 
-  const  sendEmail = (e) => {
-    e.preventDefault();
+  // const  sendEmail = (e) => {
+  //   e.preventDefault();
 
-    emailjs.sendForm('service_ph1l7w6', 'template_y4wgai7', form.current, 'MCXYN1narHDCj_5dp')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
+  //   emailjs.sendForm('service_ph1l7w6', 'template_y4wgai7', form.current, 'MCXYN1narHDCj_5dp')
+  //     .then((result) => {
+  //         console.log(result.text);
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     });
+  // };
 
 
   async function handlesignUpCredentials(formData) {
@@ -38,7 +38,7 @@ const SignUp = () => {
       const res = await signUpWithCredentials({ name, email, password, phone, state, businessName, page, product, orderNumber });
       setMessage(res.msg); // Set the message
     } catch (error) {
-      setMessage('Error no up'); // Set an error message if there's an error
+      setMessage('Error signing up'); // Set an error message if there's an error
     }
   }
 
