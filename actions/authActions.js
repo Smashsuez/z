@@ -1,7 +1,6 @@
 "use server"
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import User from "../models/userModel";
-import emailjs from '@emailjs/browser';
 import { getServerSession } from "next-auth/next";
 import { redirect } from "next/navigation";
 import bcrypt from "bcrypt" 
@@ -53,11 +52,6 @@ export async function signUpWithCredentials (data){
         }
 
         const token = generateToken({user: data})
-        // await sendEmail({
-        //     to: "mohamedahmedgameel@gmail.com",
-        //     url: `${BASE_URL}/verify?token=${token}`,
-        //     text: 'test'
-        // })
         await sendEmail({
             to: data.email,
             url: `${BASE_URL}/verify?token=${token}`,
