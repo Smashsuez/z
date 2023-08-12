@@ -42,11 +42,12 @@ export async function AdminUpdateUser ({name,id, cash, phone}){
 
 
 export async function signUpWithCredentials (data){
-
+    console.log("hi")
     try{
+        console.log(data.email)
         const user = await User.findOne({email: data.email})
         if(user) throw new Error("Email Already Exists!")
-        
+        console.log(data)
         if(data.password){
             data.password = await bcrypt.hash(data.password, 12)
         }
