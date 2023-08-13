@@ -62,7 +62,7 @@ const NavLink = () => {
             <div className={`link ${navActive ? "openmenu" : ""}`} onClick={toggleNavActive}>
               <Link legacyBehavior href={"/contactUs"}>
                 <div className="linkInner">
-                    <a>Contact</a>
+                    <a>Contact Us</a>
                 </div>
               </Link>
               
