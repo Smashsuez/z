@@ -21,7 +21,6 @@ export default function Home()  {
       {/* <ContactSales/> */}
       <According/>
       {/* <Contact/> */}
-      <Footer/>
     </div>
     </>
   )
