@@ -139,6 +139,9 @@
     border-radius: 10px;
     cursor: pointer;
   } 
+  .message{
+    padding-top: 30px;
+  }
   @media screen and (max-width: 800px) {
     .container{
       padding-top: 0px;

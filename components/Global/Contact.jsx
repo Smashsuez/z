@@ -5,6 +5,7 @@ import styles from "../../app/style/Contact.module.css"
 import { useState } from 'react';
 
 const Contact = () => {
+  const [message, setMessage] = useState('');
     // const [customer, setCustomer] = useState("");  
     // const [email, setEmail] = useState("");
     // const [phone, setPhone] = useState("");
@@ -14,7 +15,9 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm('service_ph1l7w6', 'template_o4khp7d', form.current, 'MCXYN1narHDCj_5dp')
-      .then((result) => {
+      .then((result) => { 
+        setMessage("Thansks For Choosing Zagel, We Will Resonse As Soon As Possible.");
+        e.target.reset();
         console.log(result.text);
       })
       .catch((error) => {
@@ -69,6 +72,7 @@ const Contact = () => {
         </div>
         
       <input className={styles.button} type="submit" value="Send" />
+      {message && <div className={styles.message}>{message}</div>}
     </form>
     </div>
     <div className={styles.image}></div>
