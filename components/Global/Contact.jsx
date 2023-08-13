@@ -64,8 +64,8 @@ const Contact = () => {
         </div>
         
         <div className={styles.item}>
-        <label className={styles.label}>Order Number</label>
-        <input type="orderNumber" name="orderNumber" placeholder="Order Number" className={styles.input} required />
+        <label className={styles.label}>Estimated Number Of Orders Per Month?</label>
+        <input type="orderNumber" name="orderNumber" placeholder="Estimated Number Of Orders Per Month?" className={styles.input} required />
         </div>
         
       <input className={styles.button} type="submit" value="Send" />

@@ -57,7 +57,7 @@ const SignUp = () => {
         <input type="businessName" name="businessName" placeholder="Business Name" required />
         <input type="page" name="page" placeholder="Website / Facebook Page" required />
         <input type="product" name="product" placeholder="What Is/Are Product You Deliverd" required />
-        <input type="orderNumber" name="orderNumber" placeholder="Order Number" required />
+        <input type="orderNumber" name="orderNumber" placeholder="Estimated Number Of Orders Per Month?" required />
         <select name="state" value={state} onChange={handleStateChange}>
           <option value="Personal">Personal</option>
           <option value="Business">Business</option>
