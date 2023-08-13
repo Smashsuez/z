@@ -14,7 +14,7 @@ const res = await verfiyWithCredentials(token)
       </div>
       <div>
         <Link href={"/../signin"}>
-          <button>Try Again</button>
+          <button style={{padding: "10px", backgroundColor: "#006dda",borderRadius: "10px"}}>signIn Page</button>
         </Link>
         
       </div>
