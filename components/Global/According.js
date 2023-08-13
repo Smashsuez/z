@@ -10,7 +10,7 @@ const According = () => {
     const [detail, setDetail] = useState(Question)
   return (
     <>
-        <section className='according'>
+        <section className='according' id='according'>
             <div className='according'>
                 <div className='according-row'>
                     <div className='left'>
