@@ -3,7 +3,7 @@ import styles from "../../app/style/X.module.css"
 
 const X = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='x'>
         
             <div className={styles.cardWrapper}>
                 <div className={styles.card}>

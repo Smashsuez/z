@@ -35,7 +35,7 @@ const Landing = () => {
                         </p>
                     </div>
                     <div className={styles.link}>
-                        <a href='/#menu' className={styles.explore}>Explore</a>
+                        <a href='/#x' className={styles.explore}>Explore</a>
                         <a href='/contactUs' className={styles.contact}>Contact Us</a>
                     </div>
                 </div>
