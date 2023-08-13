@@ -7,13 +7,13 @@ const Icon = () => {
   return (
     <>
     <div className={styles.icons}>
-    <a href="/">
+    <a href="https://www.facebook.com/zagel.eg1?mibextid=2JQ9oc">
     <FontAwesomeIcon icon={faFacebook}   className={styles.icon}/>
     </a>
-    <a href="/">
+    <a href="#">
     <FontAwesomeIcon icon={faInstagram} className={styles.icon}/>
     </a>
-    <a href="/">
+    <a href="https://wa.me/201012611027">
     <FontAwesomeIcon icon={faWhatsapp}  className={styles.icon}/>
     </a>
     
