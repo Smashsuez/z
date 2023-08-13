@@ -8,7 +8,7 @@ const res = await verfiyWithCredentials(token)
 
 
   return (
-    <div style={{height: "100vh",flexDirection: "column",display: "flex", alignItems: "center", justifyContent: "center", }}>
+    <div style={{height: "100vh",display: "flex",flexDirection: "column",alignItems: "center", justifyContent: "center", }}>
       <div>
       {res?.msg}
       </div>
