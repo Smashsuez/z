@@ -8,6 +8,7 @@ import AuthNav from './AuthNav'
 import "../../app/page.module.css"
 import NavLink from './NavLink'
 import LangNav from './LangToggle'
+import Image from 'next/image'
 
 const Header = async () => {
     const session = await getServerSession (authOptions)
@@ -15,8 +16,8 @@ const Header = async () => {
     <header style={{display: "flex", justifyContent: "space-evenly", }}>
        <nav className={`nav`}>
         <Link  legacyBehavior href={"/"} > 
-          {/* <Image src="/imgs/[removal.ai]_688263e9-0ee6-4409-9343-98d6d25337bc.png" alt="" width="100" height="100" style={{cursor:"pointer"}}/> */}
-          <a className="logo">ZAGEL</a>
+          <a ><Image src="/imgs/logo.jpg" alt="" width="150" height="50" style={{cursor:"pointer"}}/>
+          </a>
         </Link>
         <div className="auth">
            <AuthNav/>

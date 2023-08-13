@@ -246,7 +246,8 @@ input.check-toggle-round-flat:checked + label:after {
     font-size: 70%;
   }
   header{
-    padding: 1rem 0.5rem 1rem 1rem;
+    /* padding: 1rem 0.5rem 1rem 1rem; */
+    padding: 0;
   }
 }
 
