@@ -24,10 +24,11 @@ const Contact = () => {
 
   return (
     <div className={styles.container} id='contact'>
-      <h2 className={styles.title}>Feel Free To Contact Us</h2>
+      
       <div className={styles.content}>
         <div className={styles.wrapper}>
                   <form className={styles.form} ref={form} onSubmit={sendEmail}>
+                  <h2 className={styles.title}>Feel Free To Contact Us</h2>
                     <div className={styles.item}>
                     <label className={styles.label}>Name</label>
       <input className={styles.input} type="text" placeholder="Name" name="user_name" required/>
