@@ -3,7 +3,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <div style={{marginTop:"100px"}}>
         <Contact/>
     </div>
   )

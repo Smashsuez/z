@@ -50,14 +50,23 @@ const SignUp = () => {
     <div className="container">
       <h2>Welcome To ZAGEL</h2>
       <UpdataForm action={handlesignUpCredentials} className="form">
+      <label className="label">Name</label>
         <input type="text" name="name" placeholder="Name" required />
+        <label className="label">Email</label>
         <input type="email" name="email" placeholder="Email" required />
+        <label className="label">Password</label>
         <input type="password" name="password" placeholder="Password" required />
+        <label className="label">Phone Number</label>
         <input type="phone" name="phone" placeholder="Phone Number" required />
+        <label className="label">Business Name</label>
         <input type="businessName" name="businessName" placeholder="Business Name" required />
+        <label className="label">Website / Facebook Page</label>
         <input type="page" name="page" placeholder="Website / Facebook Page" required />
+        <label className="label">What Is/Are Product You Deliverd</label>
         <input type="product" name="product" placeholder="What Is/Are Product You Deliverd" required />
+        <label className="label">Estimated Number Of Orders Per Month?</label>
         <input type="orderNumber" name="orderNumber" placeholder="Estimated Number Of Orders Per Month?" required />
+        <label className="label">Choose</label>
         <select name="state" value={state} onChange={handleStateChange}>
           <option value="Personal">Personal</option>
           <option value="Business">Business</option>
