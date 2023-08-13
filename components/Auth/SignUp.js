@@ -4,6 +4,7 @@ import React, { useRef ,useState} from 'react';
 import { signUpWithCredentials } from '@/actions/authActions';
 import Button from '../Profile/Button';
 import UpdataForm from '../Profile/UpdataForm';
+import Image from 'next/image';
 import "../../app/style/SignUp.css" // Import the CSS file
 
 const SignUp = () => {
@@ -48,7 +49,7 @@ const SignUp = () => {
 
   return (
     <div className="container">
-      <h2>Welcome To ZAGEL</h2>
+      <h2 className='contactTitle'>Welcome To <Image src="/imgs/logo2.jpg" alt="" width="150" height="40"/></h2>
       <UpdataForm action={handlesignUpCredentials} className="form">
       <label className="label">Name</label>
         <input type="text" name="name" placeholder="Name" required />
