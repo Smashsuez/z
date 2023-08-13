@@ -22,57 +22,8 @@ const Header = async () => {
            <AuthNav/>
          </div>
         <NavLink/>
-        <LangNav/>
-        {/* <div className="auth">
-          <AuthNav/>
-        </div>
-        
-        <div className={`nav__menu-list ${navActive ? "active" : ""}`} >
-          <div className="linkContainer">
-            
-            <div className={`link ${navActive ? "openmenu" : ""}`}>
-              <div className={`linkInner activeLink`}>
-                <Link legacyBehavior href={"/"}>
-                  <a>Home</a>
-                </Link>
-              </div>
-            </div>
-            <div className={`link ${navActive ? "openmenu" : ""}`}>
-              <div className="linkInner">
-                <Link legacyBehavior href={"/about"}>
-                  <a>About</a>
-                </Link>
-              </div>
-            </div>
-            
-            <div className={`link ${navActive ? "openmenu" : ""}`}>
-              <div className="linkInner">
-                <Link legacyBehavior href={"/Services"}>
-                  <a>Services</a>
-                </Link>
-              </div>
-            </div>
-
-            <div className={`link ${navActive ? "openmenu" : ""}`}>
-              <div className="linkInner">
-                <Link legacyBehavior href={"/Clients"} >
-                  <a>Clients</a>
-                </Link>
-              </div>
-            </div>
-
-            <div className={`link ${navActive ? "openmenu" : ""}`}>
-              <div className="linkInner">
-                <Link legacyBehavior href={"/Contact"}>
-                  <a>Contact</a>
-                </Link>
-              </div>
-            </div>
-
-            
-
-          </div>
-        </div> */}
+        {/* <LangNav/> */}
+      
         
       </nav>
         {/* {session ? 
