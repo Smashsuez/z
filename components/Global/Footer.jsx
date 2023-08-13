@@ -16,7 +16,7 @@ const Footer = () => {
           <ul className={styles.ul}>
            <li><a className={styles.link}  href="/">Home</a></li>
                         <li><a className={styles.link} href="/#menu">Services</a></li>
-                        <li><a className={styles.link}  href="/#according">Feq Question</a></li>
+                        <li><a className={styles.link}  href="/#according">FAQ</a></li>
                         <li><a className={styles.link}  href="/contactUs">Contact</a></li>
           </ul>
         </div>
