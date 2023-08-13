@@ -72,6 +72,7 @@ nav .linkContainer{
 }
 nav .link {
   margin: 0 3px;
+  cursor: pointer;
 }
 .nav .linkInner{
   text-align: center;
