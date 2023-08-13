@@ -20,9 +20,9 @@ const List = () => {
           <span className={styles.title}>Our Services</span>
         </div>
         <div className={styles.wrapper} 
-        data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"
+    //     data-aos="fade-right"
+    //  data-aos-offset="300"
+    //  data-aos-easing="ease-in"
      >
     <div className={styles.cardContainer} onClick={() => setOpen(true)} >
         {/* <Image className={styles.image} src={list.img} width="50" height="50" alt=""/> */}
@@ -46,7 +46,7 @@ const List = () => {
     
       
         </div> 
-        {/* <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> */}
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
   AOS.init();
 </script>
