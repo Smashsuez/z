@@ -18,15 +18,15 @@ const NavLink = () => {
         <div className={`nav__menu-list ${navActive ? "active" : ""}`} >
           <div className="linkContainer">
             
-            <div className={`link ${navActive ? "openmenu" : ""}`}>
-              <div className={`linkInner activeLink`}>
+            {/* <div className={`link ${navActive ? "openmenu" : ""}`}>
+              <div className={`linkInner `}>
                 <Link legacyBehavior href={"/profile/server"}>
                   <a>Profile</a>
                 </Link>
               </div>
-            </div>
+            </div> */}
             <div className={`link ${navActive ? "openmenu" : ""}`}>
-              <div className={`linkInner `}>
+              <div className={`linkInner activeLink`}>
                 <Link legacyBehavior href={"/"}>
                   <a>Home</a>
                 </Link>
@@ -34,7 +34,7 @@ const NavLink = () => {
             </div>
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
-                <Link legacyBehavior href={"#menu"}>
+                <Link legacyBehavior href={"/aboutUs"}>
                   <a>About</a>
                 </Link>
               </div>
@@ -48,13 +48,13 @@ const NavLink = () => {
               </div>
             </div>
 
-            <div className={`link ${navActive ? "openmenu" : ""}`}>
+            {/* <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
-                <Link legacyBehavior href={"/Clients"} >
+                <Link legacyBehavior href={"#"} >
                   <a>Clients</a>
                 </Link>
               </div>
-            </div>
+            </div> */}
 
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">

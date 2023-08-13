@@ -143,6 +143,6 @@
       height: fit-content;
     }
     .content{
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
   }

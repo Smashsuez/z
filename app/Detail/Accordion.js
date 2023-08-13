@@ -1,18 +1,13 @@
 const question =[
     {
         id:"1",
-        question:"How much do I need for a down payment?",
-        answer:"Esteem spirit temper too say adieus who direct esteem eteems luckily or picture placing drawing"
+        question:"Are there any setup fees or hidden costs?",
+        answer:"We're committed to transparency and nonesty, and that's why we never charge any setup fees or hidden costs."
     },
     {
         id:"2",
-        question:"How much do I have to pay an agent to help me buy a house?",
-        answer:"Esteem spirit temper too say adieus who direct esteem eteems luckily or picture placing drawing"
-    },
-    {
-        id:"3",
-        question:"What the first step of the home buying process?",
-        answer:"Esteem spirit temper too say adieus who direct esteem eteems luckily or picture placing drawing"
+        question:"What payment methods do you support?",
+        answer:"We accept Visa, Mastercard,E-Wallets. However, if your preferred payment method isn't included, please don't hesitate to contact us to discuss alternative options."
     }
 ]
 export default question

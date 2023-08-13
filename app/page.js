@@ -16,11 +16,11 @@ export default function Home()  {
     <div>
       <Landing/>
       <Feature/>
-      <List/>
       <X/>
-      <ContactSales/>
+      <List/>
+      {/* <ContactSales/> */}
       <According/>
-      <Contact/>
+      {/* <Contact/> */}
       <Footer/>
     </div>
     </>

@@ -257,7 +257,7 @@ input.check-toggle-round-flat:checked + label:after {
     flex-direction: column;
     justify-content:baseline;
     row-gap: 6px;
-    left: 50%;
+    right: 0;
     transform: translateX(-50%);
     cursor: pointer;
     width: 40px;
@@ -538,6 +538,7 @@ h1{
   display: grid;
   place-items: center;
   background-color: #eee;
+  font-family: 'Nunito', sans-serif;
 }
 .according-row{
   display: flex;
@@ -554,7 +555,6 @@ h1{
 .left h3{
   font-size: 46px;
   font-weight: 300;
-  font-family: 'Nuosu SIL', serif;
   color: #414243;
   margin-bottom: 1rem;
 }
