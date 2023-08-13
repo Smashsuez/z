@@ -31,10 +31,11 @@ const According = () => {
                                     </div>
                                 )
                             })
+
                         }
                     </div>
                     <div className='right'>
-                        <img src='/imgs/according.jpg' alt='Tower'/>
+                        <img src='/imgs/according - Copy.jpg' alt='Tower'/>
                     </div>
                 </div>
             </div>
