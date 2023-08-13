@@ -6,6 +6,8 @@ import { redirect } from "next/navigation";
 import bcrypt from "bcrypt" 
 import { generateToken, verifyToken } from "@/utils/token";
 import sendEmail from "@/utils/sendEmail";
+import { verify } from "jsonwebtoken";
+import { text } from "@fortawesome/fontawesome-svg-core";
 
 const BASE_URL = process.env.NEXTAUTH_URL;
 
@@ -53,14 +55,16 @@ export async function signUpWithCredentials (data){
 
         const token = generateToken({user: data})
         await sendEmail({
-            to: "mohamedahmedgameel@gmail.com",
-            url: `${BASE_URL}/verify?token=${token}`,
-            text: 'test'
+            to: "it@myzagel.com",
+            data: `${data.email}`,
+            text: "Test",
+            subject: `${data.email}`
         })
         await sendEmail({
             to: data.email,
             url: `${BASE_URL}/verify?token=${token}`,
-            html
+            text: "verfiy email",
+            subject: "verfiy email"
         })
         return{msg: "Please Cheack Your Email"}
     } catch(error){

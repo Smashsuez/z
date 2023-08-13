@@ -1,4 +1,4 @@
-export function html({ url, text }) {
+export function html({ url, text, data }) {
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -37,6 +37,7 @@ export function html({ url, text }) {
         <div class="container">
             <h1>Email Verification</h1>
             <p>Click the button below to verify your email:</p>
+            ${data ? `<p>${data}</p>` : ''}
             <p><a class="button" href="${url}">${text}</a></p>
         </div>
     </body>
