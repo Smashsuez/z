@@ -141,7 +141,7 @@
   } 
   @media screen and (max-width: 800px) {
     .container{
-      padding-top: 50px;
+      padding-top: 0px;
       height: fit-content;
     }
     .content{
