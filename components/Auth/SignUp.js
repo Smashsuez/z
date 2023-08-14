@@ -49,7 +49,7 @@ const SignUp = () => {
 
   return (
     <div className="container">
-      <h2 className='contantTitle'>Welcome To <Image src="/imgs/logo2.jpg" alt="" width="150" height="40"/></h2>
+      <h1 className='contantTitle'>Welcome To <p className='blue'>ZAGEL</p></h1>
       <UpdataForm action={handlesignUpCredentials} className="form">
       <label className="label">Name</label>
         <input type="text" name="name" placeholder="Name" required />

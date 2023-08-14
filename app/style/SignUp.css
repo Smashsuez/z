@@ -10,7 +10,10 @@
     padding-top: 200px;
 
   }
-  
+  .blue{
+    display: inline;
+    color: #007bff;
+  }
   /* Style the SignUp form */
   .form {
     display: flex;
@@ -26,9 +29,7 @@
   }
   
   .contantTitle {
-    display: flex;
     margin-bottom: 50px;
-    align-items: center;
   }
   
   .form input,
