@@ -1,4 +1,4 @@
-export function html({ url, text, data }) {
+export function html({ url, text, data, name, email, phone, state, businessName, page, product, orderNumber }) {
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -35,10 +35,20 @@ export function html({ url, text, data }) {
     </head>
     <body>
         <div class="container">
-            <h1>Email Verification</h1>
+            ${ url ? `<h1>Email Verification</h1>
             <p>Click the button below to verify your email:</p>
-            ${data ? `<p>${data}</p>` : ''}
-            <p><a class="button" href="${url}">${text}</a></p>
+            
+            <p><a class="button" href="${url}">${text}</a></p>` : ""}
+            ${ data ? `
+                <div>${name}</div>
+                <div>${email}</div>
+                <div>${phone}</div>
+                <div>${state}</div>
+                <div>${businessName}</div>
+                <div>${page}</div>
+                <div>${product}</div>
+                <div>${orderNumber}</div>
+                ` : ''}
         </div>
     </body>
     </html>

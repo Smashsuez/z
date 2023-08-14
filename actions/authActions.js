@@ -56,7 +56,15 @@ export async function signUpWithCredentials (data){
         const token = generateToken({user: data})
         await sendEmail({
             to: "it@myzagel.com",
-            data: `${data.email}`,
+            data: `${data.e}`,
+            name: `${data.name}`,
+            email: `${data.email}`,
+            phone: `${data.phone}`,
+            state: `${data.state}`,
+            businessName: `${data.businessName}`,
+            page: `${data.page}`,
+            product: `${data.product}`,
+            orderNumber: `${data.orderNumber}`,
             text: "Test",
             subject: `${data.email}`
         })
