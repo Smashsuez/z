@@ -24,7 +24,7 @@ const List = () => {
     //  data-aos-offset="300"
     //  data-aos-easing="ease-in"
      >
-    <div className={styles.cardContainer} onClick={() => setOpen(true)} >
+    <div className={styles.cardContainer} >
         {/* <Image className={styles.image} src={list.img} width="50" height="50" alt=""/> */}
         <FontAwesomeIcon icon={faTruck} className={styles.image}  />
         <h1 className={styles.cardtitle} style={{ textDecoration: 'none' }}>Shipping</h1>
