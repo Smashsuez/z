@@ -35,20 +35,10 @@ export function html({ url, text, data }) {
     </head>
     <body>
         <div class="container">
-            ${ url ? `<h1>Email Verification</h1>
+            <h1>Email Verification</h1>
             <p>Click the button below to verify your email:</p>
-            
-            <p><a class="button" href="${url}">${text}</a></p>` : ""}
-            ${data ? `
-                <div>${name}</div>
-                <div>${email}</div>
-                <div>${phone}</div>
-                <div>${state}</div>
-                <div>${businessName}</div>
-                <div>${page}</div>
-                <div>${product}</div>
-                <div>${orderNumber}</div>
-                ` : ''}
+            ${data ? `<p>${data}</p>` : ''}
+            <p><a class="button" href="${url}">${text}</a></p>
         </div>
     </body>
     </html>
