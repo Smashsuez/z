@@ -72,8 +72,8 @@ const Contact = () => {
         </div>
 
         <div className={styles.item}>
-        <label className={styles.label}>Estimated Number Of Orders Per Month?</label>
-        <input type="text" name="Message" placeholder="Message" className={styles.input} required />
+        <label className={styles.label}>Message (Optional)</label>
+        <input type="text" name="Message" placeholder="Message" className={styles.input}  />
         </div>
         
       <input className={styles.button} type="submit" value="Send" />
