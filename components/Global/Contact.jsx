@@ -73,7 +73,7 @@ const Contact = () => {
 
         <div className={styles.item}>
         <label className={styles.label}>Message (Optional)</label>
-        <input type="text" name="Message" placeholder="Message" className={styles.input}  />
+        <input type="text" name="User_Message" placeholder="Message" className={styles.input}  />
         </div>
         
       <input className={styles.button} type="submit" value="Send" />
