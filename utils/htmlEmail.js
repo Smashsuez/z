@@ -19,7 +19,7 @@ export function html({ url, text, data, name, email, phone, state, businessName,
                 max-width: 600px;
                 margin: 0 auto;
                 padding: 20px;
-                text-align: center;
+                line-height: 2;
             }
             
             /* Button styles */
@@ -35,19 +35,24 @@ export function html({ url, text, data, name, email, phone, state, businessName,
     </head>
     <body>
         <div class="container">
-            ${ url ? `<h1>Email Verification</h1>
-            <p>Click the button below to verify your email:</p>
-            
-            <p><a class="button" href="${url}">${text}</a></p>` : ""}
+            ${ url ? `
+            <p>Hello,</p>
+            <p>Thank you for signing up with ZAGEL. Please click the button below to verify your email address:</p>
+            <p><a class="button" href="${url}">${text}</a></p>
+            <p>If you didn't create an account with ZAGEL, you can safely ignore this email.</p>
+            <br/>
+            <p>Best regards,</p>
+            <p>The ZAGEL Team</p>`
+            : ""}
             ${ data ? `
-                <div>${name}</div>
-                <div>${email}</div>
-                <div>${phone}</div>
-                <div>${state}</div>
-                <div>${businessName}</div>
-                <div>${page}</div>
-                <div>${product}</div>
-                <div>${orderNumber}</div>
+                <div>Name: ${name}</div>
+                <div>Email: ${email}</div>
+                <div>Phone: ${phone}</div>
+                <div>State: ${state}</div>
+                <div>Business Name: ${businessName}</div>
+                <div>Website / Facebook page: ${page}</div>
+                <div>What Is/Are Product You Deliverd ${product}</div>
+                <div>Estimated Number Of Orders Per Month?: ${orderNumber}</div>
                 ` : ''}
         </div>
     </body>
