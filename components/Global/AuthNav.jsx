@@ -14,7 +14,7 @@ const AuthNav = () => {
   }
   return (
     <>
-      <Link href="/../signup">Sign Up</Link><br />
+      <Link href="/../signup">Start For Free</Link><br />
       <Link href="/../signin">Sign In</Link>
       
     </>

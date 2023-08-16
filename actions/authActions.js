@@ -82,17 +82,18 @@ export async function signUpWithCredentials (data){
 }
 
 export async function verfiyWithCredentials (token){
-
     try{
         const { user } = verifyToken(token)
-        console.log({user})
         const userExist = await User.findOne({email: user.email})
+        console.log({userExist})
         if (userExist) return{msg: "verify Success  Please Go To Sign In Page"}
         const newUser = new User(user)
-        await newUser.save();
         console.log({newUser})
-         redirect('https://www.myzagel.com/signin')
+        await newUser.save();
+        return{msg: "Thanks For Choosing Zagel"}
+        //  redirect('https://www.myzagel.com/signin')
     } catch(error){ 
+        console.log("error")
         redirect(`/errors?error=${error.message}`)
     }
     

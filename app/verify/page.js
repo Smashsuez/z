@@ -3,7 +3,7 @@ import Link from "next/link"
 
 
 const verifyPage = async ({searchParams: {token}}) => {
-  
+  console.log(token)
 const res = await verfiyWithCredentials(token)
 
 
