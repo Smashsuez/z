@@ -90,8 +90,8 @@ export async function verfiyWithCredentials (token){
         const newUser = new User(user)
         console.log({newUser})
         await newUser.save();
-        // return{msg: "Thanks For Choosing Zagel"}
-        redirect('https://www.myzagel.com/signin')
+        return{msg: "Thanks For Choosing Zagel"}
+        //  redirect('https://www.myzagel.com/signin')
     } catch(error){ 
         console.log("error")
         redirect(`/errors?error=${error.message}`)
