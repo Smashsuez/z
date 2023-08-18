@@ -13,7 +13,7 @@ const ProfileUpdate = ({update, id, cash}) => {
         }
         const res =  await UpdateUser({name, id,phone})
        
-    }
+    }           
   return (
     <div>
         <p onClick={() => setOpen(true)}> Update Profile</p>
@@ -29,4 +29,4 @@ const ProfileUpdate = ({update, id, cash}) => {
   )
 }
 
-export default ProfileUpdate
+export default ProfileUpdate                                                           
