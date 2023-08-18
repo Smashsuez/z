@@ -94,6 +94,12 @@
     font-size: 20px;
     font-family: 'Rubik', sans-serif;
 }
+.wrapper{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .cardContainerTwo,
 .cardContainer{
     width: 29vw;
@@ -130,5 +136,12 @@
     top: -27px;
     font-size: 20px;
     font-family: 'Rubik', sans-serif;
+}
+@media screen and (max-width: 890px) {
+    .cardContainerTwo,
+.cardContainer{
+    width: 60vw;
+    min-width: 250px;
+}
 }
 
