@@ -7,6 +7,7 @@ import UpdataForm from '../Profile/UpdataForm';
 import Image from 'next/image';
 import "../../app/style/SignUp.css" // Import the CSS file
 import Terms from '../Global/Terms';
+import Link from 'next/link';
 
 
 const SignUp = () => {
@@ -70,7 +71,7 @@ const SignUp = () => {
   return (
     <div className="container">
       
-      <h1 className='contantTitle'>Welcome To <p className='blue'>ZAGEL</p></h1>
+      <h1 className='contantTitle'>Welcome To <Link href="/"><p className='blue'>ZAGEL</p></Link></h1>
       <UpdataForm action={handlesignUpCredentials} className="form">
       <label className="label">Name</label>
         <input type="text" name="name" placeholder="Name" required />

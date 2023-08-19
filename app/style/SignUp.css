@@ -14,6 +14,7 @@
   .blue{
     display: inline;
     color: #007bff;
+    cursor: pointer;
   }
   /* Style the SignUp form */
   .form {
