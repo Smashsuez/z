@@ -92,12 +92,12 @@ async function getUserByEmail({email}){
 
 async function signInWithCredentials({email, password, phone}){
     const user = await User.findOne({email})
-    if(!user) throw new Error('email does not exist!')
+    if(!user) return{msg: "email does not exist!"}
 
     const compare = await bcrypt.compare(password, user.password)
-    if (!compare) throw new Error("Password Does not match")
+    if (!compare) return{msg: "Password Does not match"}
 
-    if(phone != user.phone) throw new Error("phone not match")
+    if(phone != user.phone) return{msg: "phone not match"}
 
     return {...user._doc,_id: user._id.toString()}
 }

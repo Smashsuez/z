@@ -1,16 +1,25 @@
 "use client"
-import React from 'react';
+import React, {useState} from 'react';
 import { signIn } from 'next-auth/react';
 import Link from 'next/link';
 import UpdataForm from '../Profile/UpdataForm';
 import Button from '../Profile/Button';
 import styles from "../../app/style/SignIn.module.css"
 const SignIn = ({ callbackUrl }) => {
+  const [message, setMessage] = useState('');
+
   async function handleCredentialsLogin(formData){
     const email = formData.get('email')
     const password = formData.get('password')
     const phone = formData.get('phone')
-    await signIn('credentials', {email, password, phone, callbackUrl})
+    try{
+      const res = await signIn('credentials', {email, password, phone, callbackUrl})
+      setMessage(res.msg)
+    }
+    catch (error) {
+      setMessage('Please Try Again Later');
+    }
+    
   }
 
   return (
@@ -21,7 +30,8 @@ const SignIn = ({ callbackUrl }) => {
           <input type="email" name="email" placeholder="Email" required />
           <input type="password" name="password" placeholder="Password" required />
           <input type="phone" name="phone" placeholder="Phone Number" required />
-          <Button value="Sign Up" />
+          {message && <p>{message}</p>}
+          <Button value="Sign In" />
         </UpdataForm>
       </div>
       <div className={styles.form}> {/* Apply the CSS module class */}
