@@ -13,8 +13,7 @@ const SignIn = ({ callbackUrl }) => {
     const password = formData.get('password')
     const phone = formData.get('phone')
     try{
-      const res = await signIn('credentials', {email, password, phone, callbackUrl})
-      setMessage(res.msg)
+        await signIn('credentials', {email, password, phone, callbackUrl})
     }
     catch (error) {
       setMessage('Data does not match!');
