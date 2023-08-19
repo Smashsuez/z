@@ -17,7 +17,7 @@ const SignIn = ({ callbackUrl }) => {
       setMessage(res.msg)
     }
     catch (error) {
-      setMessage(res.msg);
+      setMessage('Data does not match!');
     }
     
   }
