@@ -6,11 +6,29 @@ import Button from '../Profile/Button';
 import UpdataForm from '../Profile/UpdataForm';
 import Image from 'next/image';
 import "../../app/style/SignUp.css" // Import the CSS file
+import Terms from '../Global/Terms';
+
 
 const SignUp = () => {
   const [state, setState] = useState('a');
   const [message, setMessage] = useState('');
+  const [privecy, setPrivecy] = useState(false);
+  const [Submit, setSubmit] = useState('');
   const form = useRef();
+
+  const handlePrivecy = () => {
+    console.log("hi")
+    if (privecy === true){
+      setPrivecy(false);
+      setSubmit("")
+
+    } 
+    if (privecy === false){
+      setPrivecy(true);
+      setSubmit("handlesignUpCredentials")
+    } 
+    console.log(privecy)
+  }
 
   // const  sendEmail = (e) => {
   //   e.preventDefault();
@@ -22,6 +40,8 @@ const SignUp = () => {
   //         console.log(error.text);
   //     });
   // };
+
+  
 
 
   async function handlesignUpCredentials(formData) {
@@ -49,6 +69,7 @@ const SignUp = () => {
 
   return (
     <div className="container">
+      
       <h1 className='contantTitle'>Welcome To <p className='blue'>ZAGEL</p></h1>
       <UpdataForm action={handlesignUpCredentials} className="form">
       <label className="label">Name</label>
@@ -72,8 +93,13 @@ const SignUp = () => {
           <option value="Personal">Personal</option>
           <option value="Business">Business</option>
         </select>
+        <div className='privacy'>
+          <input type="checkbox" className='checkbox'  required/>
+          <div>I Accept The <p className='blue' onClick={() => setPrivecy(true)}>Terms Of Service And Privacy Policy</p></div>
+        </div>
+        {privecy && <Terms setPrivecy={setPrivecy}/>}
         {message && <p>{message}</p>}
-        <Button value="Submit" />
+        <Button value="Submit"  />
       </UpdataForm>
     </div>
   );
