@@ -91,9 +91,7 @@ async function getUserByEmail({email}){
 } 
 
 async function signInWithCredentials({email, password, phone}){
-    console.log("user")
     const user = await User.findOne({email})
-    console.log({user})
     if(!user) return{msg: "email does not exist!"}
     
 
