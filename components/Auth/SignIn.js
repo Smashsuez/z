@@ -17,7 +17,7 @@ const SignIn = ({ callbackUrl }) => {
       setMessage(res.msg)
     }
     catch (error) {
-      setMessage('Please Try Again Later');
+      setMessage('Please Check Your Personal Data');
     }
     
   }
