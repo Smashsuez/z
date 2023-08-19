@@ -8,7 +8,7 @@ const Terms = ({setPrivecy}) => {
       <div className={styles.content}>
       <h1 className={styles.title}>Terms of Service</h1><br/>
       <p className={styles.close} onClick={() => setPrivecy(false)}>X</p>
-      This Terms and Conditions are agreed between the (1) the natural or juristic person requesting the services of the Carrier (the "Consignor"); and (2) Zagel Egypt Logistics and Technology Services (the "Carrier")
+      This Terms and Conditions are agreed between the <br/>(1) the natural or juristic person requesting the services of the Carrier the ("Consignor"); and <br/>(2) Zagel Egypt Logistics and Technology Services (the "Carrier")
 
 The services provided by the Carrier to the Consignor by virtue of any Contract shall be subject to these terms and conditions, no agent or employee of the Carrier is authorized to amend or agree different terms and conditions with Consignor:<br/>
 
