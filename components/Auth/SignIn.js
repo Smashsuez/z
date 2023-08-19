@@ -17,7 +17,7 @@ const SignIn = ({ callbackUrl }) => {
       setMessage(res.msg)
     }
     catch (error) {
-      setMessage('Please Check Your Personal Data');
+      setMessage('Data does not exist!');
     }
     
   }
