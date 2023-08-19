@@ -16,7 +16,7 @@ const SignIn = ({ callbackUrl }) => {
         await signIn('credentials', {email, password, phone, callbackUrl})
     }
     catch (error) {
-      setMessage('Data does not match!');
+      setMessage('Data do not match!');
     }
     
   }
