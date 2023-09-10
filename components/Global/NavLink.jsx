@@ -25,7 +25,7 @@ const NavLink = () => {
                 </Link>
               </div>
             </div> */}
-            <div className={`link ${navActive ? "openmenu" : ""}`} onClick={toggleNavActive}>
+            <div className={`link ${navActive ? "openmenu" : ""} `} onClick={toggleNavActive}>
               
                 <Link legacyBehavior href={"/"}>
                   <div className={`linkInner activeLink`}>
