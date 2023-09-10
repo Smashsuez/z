@@ -18,7 +18,6 @@ const SignUp = () => {
   const form = useRef();
 
   const handlePrivecy = () => {
-    console.log("hi")
     if (privecy === true){
       setPrivecy(false);
       setSubmit("")
@@ -50,11 +49,11 @@ const SignUp = () => {
     const email = formData.get("email");
     const password = formData.get("password");
     const phone = formData.get("phone");
-    const state = formData.get("state");
-    const businessName = formData.get("businessName");
-    const page = formData.get("page");
-    const product = formData.get("product");
-    const orderNumber = formData.get("orderNumber");
+    const state = "Business";
+    const businessName = "businessName";
+    const page = "page";
+    const product = "product";
+    const orderNumber = "orderNumber";
     try {
     
       const res = await signUpWithCredentials({ name, email, password, phone, state, businessName, page, product, orderNumber });
@@ -81,7 +80,7 @@ const SignUp = () => {
         <input type="password" name="password" placeholder="Password" required />
         <label className="label">Phone Number</label>
         <input type="phone" name="phone" placeholder="Phone Number" required />
-        <label className="label">Business Name</label>
+        {/* <label className="label">Business Name</label>
         <input type="businessName" name="businessName" placeholder="Business Name" required />
         <label className="label">Website / Facebook Page</label>
         <input type="page" name="page" placeholder="Website / Facebook Page" required />
@@ -93,7 +92,7 @@ const SignUp = () => {
         <select name="state" value={state} onChange={handleStateChange}>
           <option value="Personal">Personal</option>
           <option value="Business">Business</option>
-        </select>
+        </select> */}
         <div className='privacy'>
           <input type="checkbox" className='checkbox'  required/>
           <div>I Accept The <p className='blue' onClick={() => setPrivecy(true)}>Terms Of Service And Privacy Policy</p></div>
