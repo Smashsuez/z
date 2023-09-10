@@ -32,7 +32,7 @@ const List = () => {
      data-aos-offset="300"
      data-aos-easing="ease-in">
         {/* <Image className={styles.image} src={list.img} width="50" height="50" alt=""/> */}
-        <FontAwesomeIcon icon={faTruck} className={styles.image}  />
+        {/* <FontAwesomeIcon icon={faTruck} className={styles.image}  /> */}
         <h1 className={styles.cardtitle} style={{ textDecoration: 'none' }}>Shipping</h1>
         <hr className={styles.line}/>
         <p className={styles.desc} style={{ textDecoration: 'none' }}>
@@ -44,7 +44,7 @@ const List = () => {
      data-aos-offset="300"
      data-aos-easing="ease-in">
         {/* <Image className={styles.image} src={list.img} width="50" height="50" alt=""/> */}
-        <FontAwesomeIcon icon={faMotorcycle} className={styles.image}/>
+        {/* <FontAwesomeIcon icon={faMotorcycle} className={styles.image}/> */}
         <h1 className={styles.cardtitle} style={{ textDecoration: 'none' }}>GO Zagel</h1>
         <hr className={styles.line}/>
         <p className={styles.desc} style={{ textDecoration: 'none' }}>

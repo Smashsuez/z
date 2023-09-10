@@ -65,14 +65,14 @@
 }
 .cardContainerTwo,
 .cardContainer{
-    height: 265px;
+    height: 250px;
     width: 200px;
     max-width: 400px;
     display: inline-flex;
     flex-direction: column;
     text-align: center;
     justify-content: space-evenly;
-    padding: 20px;
+    /* padding: 20px; */
     align-items: center;
     background-color: aliceblue;
     border-radius: 10px;
@@ -96,22 +96,24 @@
 .cardContainerTwo::after{
     content: "SOON";
     position: absolute;
-    height: 22px;
-    width: 100%;
+    height: 16px;
+    width: 47%;
     color: aliceblue;
     background: #1f285c;
-    top: 37%;
+    top: 10px;
+    left: -27px;
+    transform: rotate(-45deg);
 }
 
 
 .cardtitle{
     font-size: 1.2rem;
     font-weight:bold;
-    color: #006dda;
+    /* color: #006dda; */
     display:flex;
     align-items:center;
     text-align: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .image{
