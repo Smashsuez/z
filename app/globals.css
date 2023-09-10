@@ -642,6 +642,11 @@ h1{
   .right img{
       width: 400px;
   }
+  @media screen and (max-width: 991px){
+    .left-content *{
+      font-size: 15px;
+  }
+  }
 }
 @media screen and (max-width: 768px){
   .according{
@@ -678,7 +683,7 @@ h1{
       height: 300px;
   }
   .left-content .collapsible{
-      font-size: 14px;
+      font-size: 15px;
   }
 }
 @media screen and (max-width: 334px){
