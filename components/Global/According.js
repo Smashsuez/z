@@ -35,7 +35,7 @@ const According = () => {
                         }
                     </div>
                     <div className='right'>
-                        <img src='/imgs/according - Copy.jpg' alt='Tower'/>
+                        <img src='/imgs/earth (2).jpg' alt='earth'/>
                     </div>
                 </div>
             </div>
