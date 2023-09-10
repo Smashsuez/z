@@ -9,6 +9,7 @@ import According from '@/components/Global/According'
 import Contact from '@/components/Global/Contact'
 import X from '@/components/Global/X'
 import ContactSales from '@/components/Global/ContactSales'
+import Counter from '@/components/Global/counter'
 
 export default function Home()  {
   return (
@@ -18,6 +19,7 @@ export default function Home()  {
       <Landing/>
       <Feature/>
       <X/>
+      <Counter/>
       <List/>
       {/* <ContactSales/> */}
       <According/>

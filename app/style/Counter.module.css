@@ -1,0 +1,95 @@
+.container{
+    min-height: 70vh;
+    width:100%;
+    max-width:100vw;
+    /* background-color: rgb(255 128 128 / 39%); */
+    padding: 3rem 3rem 3rem 3rem;
+    display:inline-flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-evenly;
+    max-width: 100%;
+    overflow: hidden;
+}
+.heading{
+    text-align: center;
+    text-transform: capitalize;
+}
+.title{
+    display: inline-block;
+    margin-bottom: 0;
+    color: #006dda;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    font-family: "poppins", sans-serif;  
+}
+.title::before{
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    content: "";
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: #1f285c;
+}
+.title::after{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    content: "";
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #1f285c;
+}
+
+.wrapper{
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    border: 2px solid #006dda;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.cardNumber{
+    align-items: center;
+    background-color: #006dda;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    color: aliceblue;
+    flex-wrap: wrap;
+}
+.cardNumber *{
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.cardDesc{
+    padding-top: 20px;
+    font-size: 16px;
+}
