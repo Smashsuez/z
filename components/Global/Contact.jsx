@@ -51,7 +51,7 @@ const Contact = () => {
       {/* <input type="text" name="name" placeholder="Name" required />
         <input type="email" name="email" placeholder="Email" required />
         <input type="phone" name="phone" placeholder="Phone Number" required /> */}
-        <div className={styles.item}>
+        {/* <div className={styles.item}>
         <label className={styles.label}>Business Name</label>
         <input type="businessName" name="businessName" placeholder="Business Name" className={styles.input} required />
         </div>
@@ -69,12 +69,12 @@ const Contact = () => {
         <div className={styles.item}>
         <label className={styles.label}>Estimated Number Of Orders Per Month?</label>
         <input type="orderNumber" name="orderNumber" placeholder="Estimated Number Of Orders Per Month?" className={styles.input} required />
-        </div>
+        </div>*/}
 
         <div className={styles.item}>
         <label className={styles.label}>Message (Optional)</label>
         <input type="text" name="User_Message" placeholder="Message" className={styles.input}  />
-        </div>
+        </div> 
         
       <input className={styles.button} type="submit" value="Send" />
       {message && <div className={styles.message}>{message}</div>}
