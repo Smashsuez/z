@@ -1,5 +1,6 @@
+"use client"
 import Landing from '@/components/Global/Landing'
-import React from 'react'
+import React , {useState} from 'react'
 import Feature from "../components/Global/Feature"
 import Services from '@/components/Global/Services'
 import List from '@/components/Global/List'

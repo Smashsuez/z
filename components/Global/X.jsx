@@ -1,12 +1,20 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styles from "../../app/style/X.module.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const X = () => {
+    useEffect(() => {
+        AOS.init({
+             duration: 800,
+             once: false,
+           })
+     }, [])
   return (
     <div className={styles.container} id='x'>
         
             <div className={styles.cardWrapper}>
-                <div className={styles.card}>
+                <div className={styles.card} data-aos="zoom-in-right">
                     <img src='/imgs/photo_2023-08-10_12-31-09.jpg' alt='' className={styles.image}/>
                     <div className={styles.content}>
                         <div className={styles.cardTitle}>One Contract For The Best Couriers</div>
@@ -14,7 +22,7 @@ const X = () => {
                     </div>
                 </div>
 
-                <div className={styles.card}>
+                <div className={styles.card} data-aos="zoom-in">
                     <img src='/imgs/photo_2023-08-10_12-31-17.jpg' alt='' className={styles.image}/>
                     <div className={styles.content}>
                         <div className={styles.cardTitle}>Insurance and Safety</div>
@@ -22,7 +30,7 @@ const X = () => {
                     </div>
                 </div>
 
-                <div className={styles.card}>
+                <div className={styles.card} data-aos="zoom-in">
                     <img src='/imgs/photo_2023-08-10_12-31-18.jpg' alt='' className={styles.image}/>
                     <div className={styles.content}>
                         <div className={styles.cardTitle}>Tracking</div>
@@ -30,7 +38,7 @@ const X = () => {
                     </div>
                 </div>
 
-                <div className={styles.card}>
+                <div className={styles.card}  data-aos="zoom-in-left">
                     <img src='/imgs/mobile2.jpg' alt='' className={styles.image}/>
                     <div className={styles.content}>
                         <div className={styles.cardTitle}>Reports</div>

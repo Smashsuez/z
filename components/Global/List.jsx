@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from  "../../app/style/Services.module.css"
 import Card from './Card'
 import Link from 'next/link'
@@ -7,11 +7,19 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import your icons
 import { faTruck , faMotorcycle } from '@fortawesome/free-solid-svg-icons';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const List = () => {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    AOS.init({
+         duration: 800,
+         once: false,
+       })
+ }, [])
 
   const L = "app/signin"
   return (
@@ -19,12 +27,10 @@ const List = () => {
         <div className={styles.heading}>
           <span className={styles.title}>Our Services</span>
         </div>
-        <div className={styles.wrapper} 
-    //     data-aos="fade-right"
-    //  data-aos-offset="300"
-    //  data-aos-easing="ease-in"
-     >
-    <div className={styles.cardContainer} >
+        <div className={styles.wrapper} >
+    <div className={styles.cardContainer}    data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in">
         {/* <Image className={styles.image} src={list.img} width="50" height="50" alt=""/> */}
         <FontAwesomeIcon icon={faTruck} className={styles.image}  />
         <h1 className={styles.cardtitle} style={{ textDecoration: 'none' }}>Shipping</h1>
@@ -34,7 +40,9 @@ const List = () => {
         </p>
     </div> 
     
-    <div className={styles.cardContainerTwo} >
+    <div className={styles.cardContainerTwo}   data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in">
         {/* <Image className={styles.image} src={list.img} width="50" height="50" alt=""/> */}
         <FontAwesomeIcon icon={faMotorcycle} className={styles.image}/>
         <h1 className={styles.cardtitle} style={{ textDecoration: 'none' }}>GO Zagel</h1>
