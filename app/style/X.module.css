@@ -2,6 +2,7 @@
     /* padding: 20px 1fr; */
     background-color: #eee;
     max-width: 100%;
+    overflow: hidden;
 }
 .cardWrapper{
     display:flex;
