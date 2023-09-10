@@ -9,7 +9,7 @@ import According from '@/components/Global/According'
 import Contact from '@/components/Global/Contact'
 import X from '@/components/Global/X'
 import ContactSales from '@/components/Global/ContactSales'
-import Counter from '@/components/Global/counter'
+import Counter from '@/components/Global/Counter'
 
 export default function Home()  {
   return (
