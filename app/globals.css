@@ -550,6 +550,7 @@ h1{
   place-items: center;
   background-color: #eee;
   font-family: 'Nunito', sans-serif;
+  overflow: hidden;
 }
 .according-row{
   display: flex;
