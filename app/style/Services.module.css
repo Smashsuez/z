@@ -66,6 +66,7 @@
 .cardContainerTwo,
 .cardContainer{
     height: 250px;
+    overflow: hidden;
     width: 200px;
     max-width: 400px;
     display: inline-flex;
