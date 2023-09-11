@@ -10,6 +10,7 @@ import Contact from '@/components/Global/Contact'
 import X from '@/components/Global/X'
 import ContactSales from '@/components/Global/ContactSales'
 import Counter from '@/components/Global/Counter'
+import Ask from '@/components/Global/Ask'
 
 export default function Home()  {
   return (
@@ -20,6 +21,7 @@ export default function Home()  {
       <Feature/>
       <X/>
       <Counter/>
+      <Ask/>
       <List/>
       {/* <ContactSales/> */}
       <According/>
