@@ -19,7 +19,7 @@ const Counter = () => {
 
                 <div className={style.card}>
                     <div className={style.cardNumber}>
-                        <span>{counterOn && <CountUp start={0} end={21} duration={4} delay={0}/>}</span>
+                        <span>{counterOn && <CountUp start={0} end={21} duration={4} delay={1}/>}</span>
                     </div>
                     <div className={style.cardDesc}>
                         <p><strong>Egyptain Branches</strong></p>
@@ -29,7 +29,7 @@ const Counter = () => {
 
                 <div className={style.card}>
                     <div className={style.cardNumber}>
-                        <span>{counterOn && <CountUp start={0} end={600} duration={2} delay={0} className={style.countUp}/>} +</span>
+                        <span>{counterOn && <CountUp start={0} end={600} duration={2} delay={1} className={style.countUp}/>} +</span>
                     </div>
                     <div className={style.cardDesc}>
                         <p><strong>Active Clients</strong></p>
@@ -38,7 +38,7 @@ const Counter = () => {
 
                 <div className={style.card}>
                     <div className={style.cardNumber}>
-                        <span>{counterOn && <CountUp start={0} end={900} duration={3} delay={0}/>}K +</span>
+                        <span>{counterOn && <CountUp start={0} end={900} duration={3} delay={1}/>}K +</span>
                     </div>
                     <div className={style.cardDesc}>
                         <p><strong>Monthly Shipments</strong></p>
